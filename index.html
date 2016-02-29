@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Unit 1 - Day 1 - Image Gallery in HTML</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
 <!-- Create a wrapper div. Everything on the page will be inside of this. -->
@@ -10,13 +11,19 @@
 	<h2>Unit 1 - Day 1 - My First Project</h2>
 	<!-- Make a new line with the br tag. -->
 	<br />
-<!-- Now we're about to add thumbnails for the gallery. -->
+	
+	<!-- Now we're about to add thumbnails for the gallery. -->
 	<div class="thumbnails">
-		<img src="images/image1.jpg" name="img1">
-		<img src="images/image2.jpg" name="img2">
-		<img src="images/image3.jpg" name="img3">
-		<img src="images/image4.jpg" name="img4">
-		<img src="images/image5.jpg" name="img5">
+		<img src="images/image1.jpg" name="img1" onclick="preview.src=img1.src">
+		<img src="images/image2.jpg" name="img2" onclick="preview.src=img2.src">
+		<img src="images/image3.jpg" name="img3" onclick="preview.src=img3.src">
+		<img src="images/image4.jpg" name="img4" onclick="preview.src=img4.src">
+		<img src="images/image5.jpg" name="img5" onclick="preview.src=img5.src">
+	</div>
+	
+	<!-- The preview window for the thumbnails. -->
+	<div class="preview">
+		<img name="preview" src="images/image1.jpg">
 	</div>
 </div>
 
