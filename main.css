@@ -6,12 +6,11 @@ body {
 }
 
 .thumbnails {
-	float: left;
 	width: 18%;
 }
 
 .thumbnails img {
-	display: block;
+	float: left;
 	width: 98%;
 	box-sizing: border-box;
 	border: 4px solid #555;
@@ -25,7 +24,9 @@ body {
 }
 
 .preview {
-	float: right;
+	position: absolute;
+	top: 70px;
+	right: 10px;
 	width: 70%;
 }
 
